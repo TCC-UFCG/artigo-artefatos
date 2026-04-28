@@ -1,0 +1,23 @@
+Descrição da Atividade
+
+Algoritmos de ordenação têm como objetivo colocar elementos
+em uma sequência ordenada. Existem pelo menos quatro formas
+bastante difundidas de ordenação: bubble sort, insertion sort, merge
+sort e quick sort. Dependendo dos dados a serem ordenados, é
+possível que um algoritmo diferente seja o mais eficiente para cada
+cenário. Com base no padrão Strategy, implemente um sistema
+com uma classe cliente (contexto) que pode alternar livremente a
+estratégia de ordenação usada para ordenar uma lista de inteiros a
+partir da seguinte assinatura de método:
+
+List<Integer> ordena(List<Integer> elementos);
+
+A lista recebida pelo método não pode ser modificada, e a or-
+denação deve operar sempre sobre uma cópia defensiva. Cada es-
+tratégia deve definir um limite conceitual de operação baseado em
+um tamanho máximo de lista que impeça seu uso. Caso o limite
+estabelecido pela estratégia selecionada seja violado e ela recuse o
+processamento, o contexto deve automaticamente recorrer ao algo-
+ritmo padrão (merge sort) como estratégia de fallback e registrar,
+por meio de um print, que houve substituição da estratégia original.
+Não é necessário implementar os algoritmos de ordenação.
